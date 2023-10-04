@@ -1,38 +1,116 @@
-.App {
-  text-align: center;
+.App{
+    background-color: rgb(246, 246, 246);
+    color: rgb(245, 243, 243);
+    display: flex;
+    flex-direction: column;
+    margin-top: 200px;
+    padding-bottom: 30px;
+    align-content: center;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.block{
+    display: flex;
+    flex-direction: column;
+    background-color: white;
+    font-size: 30px;
+    font-weight: 700;
+    font-family: Arial, Helvetica, sans-serif;
+    padding-bottom: 35px;
+    margin-top: 100px;
+    align-items: center;
+    width: 800px;
+    margin-left: 25%;
+    height: 700px;
+    margin-bottom: 25px;
+
+
+    
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.header{
+    display: flex;
+    flex-direction: column;
+    
+    margin-top: 40px;
+    margin-bottom: 20px;
+    align-items: center;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+.heading{
+    color: rgb(101, 34, 163);
+    font-size: 50px;
+    font-weight: 700px;
+    font-family:'Arial' ;
+    margin-top: 20px;
+    
+    align-items: center;
 }
 
-.App-link {
-  color: #61dafb;
+.line{
+    width: 60px;
+    height: 5px;
+    background: blueviolet;
+    border-radius: 8px;
+    margin-bottom: 80px;
+    padding-bottom: 10px;
+    margin-left: 50px;
+    align-items: center;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.form{
+    margin-top:  25px; 
+    display: flex;
+    flex-direction:column ;
+    gap: 30px;
+    height: 80px;
+    
+    background: #eaeaea;;
+    border-radius: 12px;
+    outline: none;
+    padding: 12px;
+    
 }
+
+.form input{
+    background: transparent;
+    border-radius: 12px;
+    border: none;
+    height: 50px;
+    width: 600px;
+    align-items: center;
+}
+
+.reset{
+    padding: 10px;
+    font-size: 21px;
+    color: rgb(66, 159, 162);
+}
+
+.reset span{
+    color: blue;
+    cursor: pointer;
+}
+
+.submit{
+    display: flex;
+    gap: 30px;
+    margin-left: 130px;
+    margin-top: 80px;
+    gap: 70px;    
+}
+
+.signup{
+    border-radius: 85px;
+    cursor: pointer;
+    
+    justify-content: center;
+    align-items: center;
+    background: blue;
+    color: #eaeaea;
+    padding-left: 25px;
+    padding-right: 25px;
+    padding-top: 5px;
+    padding-bottom: 5px;
+}
+
+

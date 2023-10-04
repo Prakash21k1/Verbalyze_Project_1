@@ -1,24 +1,38 @@
-import logo from './logo.svg';
-import './App.css';
-
+import "./App.css";
+import {useState} from "react";
 function App() {
+  const [action, setAction] = useState("Login");
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <>
+      <div className="block">
+        <div className="section">
+          <div className="Header">
+            <div className="heading">{action}</div>
+            <div className="line"></div>
+          </div>
+        </div>
+        <div className="inputs">
+          {action === "Login"?<div/>:<div className="form">
+            <input type="text" placeholder="Name" />
+          </div>}
+          
+          <div className="form">
+            <input type="email" placeholder="Email" />
+          </div>
+          <div className="form">
+            <input type="password" placeholder="Password" />
+          </div>
+          {action === "Sign Up"?<div/>:<div className="reset">
+            Forgot password? <span>Click Here</span>
+          </div>}
+          
+          <div className="submit">
+            <div className="signup" onClick={()=>{setAction("Sign Up")}}>Signup</div>
+            <div className="signup" onClick={()=>{setAction("Login")}}>Login</div>
+          </div>
+        </div>
+      </div>
+    </>
   );
 }
 
