@@ -20,21 +20,24 @@
     align-items: center;
     width: 800px;
     margin-left: 25%;
-    height: 700px;
-    margin-bottom: 25px;
-
-
-    
+    height: 750px;
+    margin-bottom: 20px;
+    border-radius: 25px;
 }
+
 
 .header{
     display: flex;
     flex-direction: column;
     
     margin-top: 40px;
-    margin-bottom: 20px;
+    margin-bottom: 10px;
     align-items: center;
+    
+    background-color: black;
+    
 }
+
 
 .heading{
     color: rgb(101, 34, 163);
@@ -43,7 +46,6 @@
     font-family:'Arial' ;
     margin-top: 20px;
     
-    align-items: center;
 }
 
 .line{
@@ -51,18 +53,18 @@
     height: 5px;
     background: blueviolet;
     border-radius: 8px;
-    margin-bottom: 80px;
+    margin-bottom: 20px;
     padding-bottom: 10px;
     margin-left: 50px;
     align-items: center;
 }
 
 .form{
-    margin-top:  25px; 
+     
     display: flex;
-    flex-direction:column ;
+    margin: 45px;
     gap: 30px;
-    height: 80px;
+    height: 75px;
     
     background: #eaeaea;;
     border-radius: 12px;
@@ -74,10 +76,11 @@
 .form input{
     background: transparent;
     border-radius: 12px;
-    border: none;
-    height: 50px;
-    width: 600px;
-    align-items: center;
+    outline: none;
+    border-color: #eaeaea;
+    height: 55px;
+    width: 650px;
+    
 }
 
 .reset{
@@ -91,26 +94,34 @@
     cursor: pointer;
 }
 
-.submit{
-    display: flex;
-    gap: 30px;
-    margin-left: 130px;
-    margin-top: 80px;
-    gap: 70px;    
+.Google{
+    margin-left: 35%;
+    margin-top: 35px;
 }
 
 .signup{
-    border-radius: 85px;
-    cursor: pointer;
+    display: inline-block;
+    flex-direction:row;
+    justify-content:center;
+    margin-left: 120px;
+    margin-right: 150px;
+    margin-top: 30px;
     
-    justify-content: center;
-    align-items: center;
-    background: blue;
-    color: #eaeaea;
-    padding-left: 25px;
-    padding-right: 25px;
-    padding-top: 5px;
-    padding-bottom: 5px;
 }
 
 
+button {
+    background-color: blue; /* Green */
+    border: none;
+    color: white;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 20px;
+    border-radius: 25px;
+}
+
+button:hover{
+    background-color : black;
+}
